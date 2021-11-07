@@ -1,0 +1,37 @@
+<!--        BARRA NAVEGACION DEL PDF 
+<nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+
+    <a class="navbar-brand" href="#">Compras App</a>
+    <div class="collapse navbar-collapse" id="containerNavbar"> //1
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">//2
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Inicio//3
+                </a></li>
+            <li routerLinkActive="active"><a routerLink="/proveedores">Proveedores</a></li>//4
+
+        </ul>
+    </div>
+</nav>
+-->
+<!-- BARRA DE NAVEGACION DE BOOSTRAP Y PDF EDITADAS-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Compras App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div style="align-content: flex-end" class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link active" routerLink="/">Inicio</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link active" routerLink="/proveedores">Proveedores</a>
+            </li> 
+            <li class="nav-item" routerLinkActive="active">
+                <a  class="nav-link active" routerLink="/presupuestos">Presupuestos </a>
+               </li> 
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
